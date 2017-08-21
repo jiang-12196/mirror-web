@@ -1,27 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import mirror, {actions, connect} from 'mirrorx';
-
-
-mirror.model({
-    name: 'app',
-    initialState: 0,
-    reducers: {
-        increment(state) {return state + 1},
-        decrement(state) {return state - 1}
-    },
-    effects: {
-        async incrementAsync() {
-            await new Promise((resolve, reject) => {
-                setTimeout(() => {
-                    resolve()
-                }, 1000)
-            });
-            actions.app.increment()
-        }
-    }
-});
+import {actions, connect} from 'mirrorx';
 
 const App = (props) => (
     <div className="App">
