@@ -1,5 +1,9 @@
 import mirror, {actions} from 'mirrorx';
 
+mirror.defaults({
+    historyMode: 'hash'
+});
+
 mirror.model({
     name: 'app',
     initialState: 0,

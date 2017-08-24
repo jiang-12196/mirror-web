@@ -1,7 +1,7 @@
 import React from 'react';
+import { actions, connect} from 'mirrorx';
 import logo from './logo.svg';
 import './App.css';
-import {actions, connect} from 'mirrorx';
 
 const App = (props) => (
     <div className="App">
@@ -24,5 +24,5 @@ function stateToProps(state) {
     }
 }
 
-export default connect(stateToProps)(App);
+export default  connect(stateToProps)(App);
 
