@@ -1,3 +1,9 @@
+.login {
+    line-height: 40px;
+    font-size: 38px;
+    margin: 100px auto 20px;
+    text-align: center;
+}
 .login-form {
     margin: 30px auto;
     max-width: 300px;
